@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Task 2</title>
+</head>
+<body>
+   <h1>Hello</h1>
+    <script>
+    const data = [
+        {principal: 2500, time: 1.8},
+        {principal: 1000, time: 5},
+        {principal: 3000, time: 1},
+        {principal: 2000, time: 3}
+];
+
+    const interestCalculator = data.map(data=>{
+        let rate;
+        if (data.principal >= 2500 && data.time > 1 < 3) {
+            rate = 3;
+        } else if (data.principal >= 2500 && data.time >= 3) {
+            rate = 4;
+        } else if (data.principal < 2500 || data.time <= 1) {
+            rate = 2;
+        } else {
+            rate = 1;
+        }
+        let interest = (data.principal * data.time * rate) / 100;
+
+    let interestData = {principal: data.principal, rate, time: data.time, interest};
+        console.log(interestData);
+        return interestData;
+});
+        
+function interestData(data) {
+    return data;
+}
+    </script>
+</body>
+</html>
